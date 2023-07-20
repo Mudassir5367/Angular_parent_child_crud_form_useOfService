@@ -1,0 +1,21 @@
+<h2>SignUp</h2>
+<form #templateForm="ngForm"   (ngSubmit)="submit(templateForm.value)" >
+  
+  <label>The number is:</label><br>
+  <input  type="text" name="id" [(ngModel)]="formData.id"><br>
+    <span style="color: red;" *ngIf="vallidNumber">Enter Number</span>
+  <br><br>
+  <label>First Name: </label><br>
+  <input type="text" name='fname'[(ngModel)]="formData.fname"><br>
+  <span style="color: red;" *ngIf="vallidFName">Enter the First Name</span>
+  <br><br>
+    <label>Last Name: </label><br>
+    <input type="text" name='lname'[(ngModel)]="formData.lname"><br>
+    <span style="color: red;" *ngIf="vallidLName">Enter the Last Name</span>
+    <br>
+    <button>Submit</button>
+    <br><br>
+  </form>
+  
+  <app-table [values]="userData" (Item)="update($event)"></app-table>
+  

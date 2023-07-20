@@ -1,0 +1,20 @@
+
+<!-- <app-form (Data)="onSubmit($event)" ></app-form> -->
+
+<table border="1px solid black" cellpadding="10px" cellspacing="0px">
+  <tr>
+    <th>ID</th>
+    <th>fName</th>
+    <th>lName</th>
+    <th>Update</th>
+    <th>Remove</th>
+  </tr>
+  <tr *ngFor="let user of values; let i = index">
+    <td scope="row">{{ i+1 }}</td>
+    <td>{{ user.fname}}</td>
+    <td>{{ user.lname }}</td>
+    <!-- <td> <button (click)="add(user,i)">Add Data</button></td> -->
+    <td> <button (click)="edit(user,i)">Edit</button></td>
+    <td> <button (click)="remove(user)">Remove</button></td>
+  </tr>
+</table>

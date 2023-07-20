@@ -1,0 +1,57 @@
+<router-outlet></router-outlet>
+<!-- <app-form></app-form> -->
+<!-- <app-table></app-table> -->
+
+<!-- Two Way bindig -->
+<!-- <input type="text" [(ngModel)]="Item">
+{{Item}} -->
+
+<!-- Reactive Form -->
+
+<!-- <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+  <label for="first-name">First Name: </label><br>
+  <input id="first-name" type="text" formControlName="firstName"><br>
+  <span style="color: red;" >Enter the First Name</span>
+<br><br>
+  <label for="last-name">Last Name: </label><br>
+  <input id="last-name" type="text" formControlName="lastName"><br>
+  <span style="color: red;" >Enter the First Name</span>
+<br><br>
+<div formGroupName="address">
+  <h2>Address</h2>
+
+  <label for="street">Street: </label><br>
+  <input id="street" type="text" formControlName="street"><br><br>
+
+  <label for="city">City: </label><br>
+  <input id="city" type="text" formControlName="city"><br><br>
+
+  <label for="state">State: </label><br>
+  <input id="state" type="text" formControlName="state"><br><br>
+
+  <label for="zip">Zip Code: </label><br>
+  <input id="zip" type="text" formControlName="zip"><br><br>
+</div>
+<button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form> -->
+
+
+<!-- Template Form -->
+<!-- 
+<form #templateForm="ngForm"  (ngSubmit)="submit(templateForm.value)">
+
+  <label>The number is:</label><br>
+  <input  type="text" name="id" [(ngModel)]="formData.id"><br>
+  <span style="color: red;" *ngIf="vallidNumber">Enter Number</span>
+<br><br>
+<label>First Name: </label><br>
+<input type="text" name='lName'[(ngModel)]="formData.lname"><br>
+<span style="color: red;" *ngIf="vallidFName">Enter the First Name</span>
+<br><br>
+  <label>Last Name: </label><br>
+  <input type="text" name='fName'[(ngModel)]="formData.fname"><br>
+  <span style="color: red;" *ngIf="vallidLName">Enter the Last Name</span>
+<br><br>
+<button>Submit</button>
+</form> -->
